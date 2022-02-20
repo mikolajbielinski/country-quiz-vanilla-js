@@ -1,0 +1,151 @@
+:root {
+  --main-gray: #f2f2f2;
+  --main-purple: #6066d0;
+  --main-orange: #f9a826;
+  --dark-blue: #2f527b;
+  --darker-blue: #1d355d;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(background.png);
+  background-size: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Poppins, sans-serif;
+}
+
+/********************************/
+/*************APP****************/
+/********************************/
+
+.app-title {
+  color: var(--main-gray);
+  font-weight: 700;
+  font-size: 3.6rem;
+  text-transform: uppercase;
+  padding: 1rem;
+}
+
+.app-container {
+  background-color: white;
+  padding: 3rem 2rem;
+  border-radius: 24px;
+  min-width: 60rem;
+  height: 65rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.app-flag {
+  width: 8.4rem;
+}
+
+.app-question {
+  color: var(--dark-blue);
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+
+.app-answer-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 4rem;
+  border: 2px solid var(--main-purple);
+  border-radius: 12px;
+  padding: 1.5rem;
+  color: var(--main-purple);
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+.app-answer-container:hover {
+  color: white;
+  background-color: var(--main-orange);
+  border-color: var(--main-orange);
+}
+
+.correct-answer,
+.correct-answer:hover {
+  background: #60bf88;
+  border-color: #60bf88;
+  color: white;
+  cursor: auto;
+}
+
+.incorrect-answer,
+.incorrect-answer:hover {
+  background: #ea8282;
+  border-color: #ea8282;
+  color: white;
+  cursor: auto;
+}
+
+/* RESULTS */
+
+.results-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 75%;
+}
+
+.app-result-text {
+  font-size: 5rem;
+  font-weight: 700;
+  color: var(--darker-blue);
+}
+
+.app-results-text {
+  font-size: 1.8rem;
+  color: var(--darker-blue);
+}
+
+.app-results-number {
+  font-weight: 700;
+  font-size: 3.6rem;
+  color: #60bf88;
+}
+
+.app-try-again-btn {
+  margin-top: 16rem;
+  color: var(--darker-blue);
+  font-weight: 700;
+  font-family: inherit;
+  background-color: transparent;
+  border: 2px solid var(--darker-blue);
+  padding: 1.2rem 4rem;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.app-try-again-btn:hover {
+  color: white;
+  background-color: var(--main-orange);
+  border-color: var(--main-orange);
+}
+
+.app-next-btn {
+  background-color: orange;
+  margin-left: auto;
+  color: white;
+  font-weight: 700;
+  border: none;
+  border-radius: 12px;
+  padding: 1rem 2rem;
+  cursor: pointer;
+}
