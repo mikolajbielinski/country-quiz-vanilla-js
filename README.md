@@ -2,4 +2,4 @@
 
 <h2 align="center">Live on netlify: https://country-quiz-mikolaj.netlify.app/</h2>
 
-<h2 align="center">TODO: RWD, animations, icons</h2>
+<h3>TODO: RWD, animations, icons</h3>
